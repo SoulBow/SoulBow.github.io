@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<head>
+  
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <title>chess</title>
+  
+</head>
+
+<body style="background: linear-gradient(90deg, black, red, black)">
+
+<h1 style="font-family: cursive; color: grey"><span style="color: red">Soul</span>Bow<span style="color: black">Chess</span></h1>
+
+<table style="border: solid 6px">
+
+<tr>
+<td><section style="width: 30px; height: 30px; background: purple"></section></td>
+<td><section id="Notation1" onclick="Notation1()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">A</p></section></td>
+<td><section id="Notation2" onclick="Notation2()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">B</p></section></td>
+<td><section id="Notation3" onclick="Notation3()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">C</p></section></td>
+<td><section id="Notation4" onclick="Notation4()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">D</p></section></td>
+<td><section id="Notation5" onclick="Notation5()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">E</p></section></td>
+<td><section id="Notation6" onclick="Notation6()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">F</p></section></td>
+<td><section id="Notation7" onclick="Notation7()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">G</p></section></td>
+<td><section id="Notation8" onclick="Notation8()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">H</p></section></td>
+<td><section style="width: 30px; height: 30px; background: purple"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation9" onclick="Notation9()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">1</p></section></td>
+<td><section onclick="tile1()" id="idH1" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p1"></section></td>
+<td><section onclick="tile2()" id="idF1" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p2"></section></td>
+<td><section onclick="tile3()" id="idH2" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p3"></section></td>
+<td><section onclick="tile4()" id="idF2" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p4"></section></td>
+<td><section onclick="tile5()" id="idH3" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p5"></section></td>
+<td><section onclick="tile6()" id="idF3" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p6"></section></td>
+<td><section onclick="tile7()" id="idH4" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p7"></section></td>
+<td><section onclick="tile8()" id="idF4" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p8"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation10" onclick="Notation10()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">2</p></section></td>
+<td><section onclick="tile9()" id="idH5" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p9"></section></td>
+<td><section onclick="tile10()" id="idF5" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p10"></section></td>
+<td><section onclick="tile11()" id="idH6"  style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p11"></section></td>
+<td><section onclick="tile12()" id="idF6" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p12"></section></td>
+<td><section onclick="tile13()" id="idH7" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p13"></section></td>
+<td><section onclick="tile14()" id="idF7" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p14"></section></td>
+<td><section onclick="tile15()" id="idH8" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p15"></section></td>
+<td><section onclick="tile16()" id="idF8" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p16"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation11" onclick="Notation11()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">3</p></section></td>
+<td><section onclick="tile17()" id="idH9" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p17"></section></td>
+<td><section onclick="tile18()" id="idF9" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p18"></section></td>
+<td><section onclick="tile19()" id="idH10" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p19"></section></td>
+<td><section onclick="tile20()" id="idF10" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p20"></section></td>
+<td><section onclick="tile21()" id="idH11" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p21"></section></td>
+<td><section onclick="tile22()" id="idF11" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p22"></section></td>
+<td><section onclick="tile23()" id="idH12" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p23"></section></td>
+<td><section onclick="tile24()" id="idF12" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p24"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation12" onclick="Notation12()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">4</p></section></td>
+<td><section onclick="tile25()" id="idH13" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p25"></section></td>
+<td><section onclick="tile26()" id="idF13" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p26"></section></td>
+<td><section onclick="tile27()" id="idH14" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p27"></section></td>
+<td><section onclick="tile28()" id="idF14" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p28"></section></td>
+<td><section onclick="tile29()" id="idH15" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p29"></section></td>
+<td><section onclick="tile30()" id="idF15" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p30"></section></td>
+<td><section onclick="tile31()" id="idH16" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p31"></section></td>
+<td><section onclick="tile32()" id="idF16" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p32"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation13" onclick="Notation13()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">5</p></section></td>
+<td><section onclick="tile33()" id="idH17" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p33"></section></td>
+<td><section onclick="tile34()" id="idF17" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p34"></section></td>
+<td><section onclick="tile35()" id="idH18" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p35"></section></td>
+<td><section onclick="tile36()" id="idF18" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p36"></section></td>
+<td><section onclick="tile37()" id="idH19" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p37"></section></td>
+<td><section onclick="tile38()" id="idF19" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p38"></section></td>
+<td><section onclick="tile39()" id="idH20" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p39"></section></td>
+<td><section onclick="tile40()" id="idF20" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p40"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation14" onclick="Notation14()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">6</p></section></td>
+<td><section onclick="tile41()" id="idH21" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p41"></section></td>
+<td><section onclick="tile42()" id="idF21" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p42"></section></td>
+<td><section onclick="tile43()" id="idH22" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p43"></section></td>
+<td><section onclick="tile44()" id="idF22" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p44"></section></td>
+<td><section onclick="tile45()" id="idH23" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p45"></section></td>
+<td><section onclick="tile46()" id="idF23" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p46"></section></td>
+<td><section onclick="tile47()" id="idH24" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p47"></section></td>
+<td><section onclick="tile48()" id="idF24" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p48"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation15" onclick="Notation15()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">7</p></section></td>
+<td><section onclick="tile49()" id="idH25" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p49"></section></td>
+<td><section onclick="tile50()" id="idF25" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p50"></section></td>
+<td><section onclick="tile51()" id="idH26" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p51"></section></td>
+<td><section onclick="tile52()" id="idF26" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p52"></section></td>
+<td><section onclick="tile53()" id="idH27" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p53"></section></td>
+<td><section onclick="tile54()" id="idF27" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p54"></section></td>
+<td><section onclick="tile55()" id="idH28" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p55"></section></td>
+<td><section onclick="tile56()" id="idF28" style="border: solid 4px; width: 30px; height: 30px; background: silver"; background: silver><p style="text-align: center; font-size: 7px" id="p56"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section id="Notation16" onclick="Notation16()" style="width: 30px; height: 30px; background: darkgreen; opacity: 60%"><p style="text-align: center; color: red; font-size: 15px">8</p></section></td>
+<td><section onclick="tile57()" id="idH29" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p57"></section></td>
+<td><section onclick="tile58()" id="idF29" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p58"></section></td>
+<td><section onclick="tile59()" id="idH30" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p59"></section></td>
+<td><section onclick="tile60()" id="idF30" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p60"></section></td>
+<td><section onclick="tile61()" id="idH31" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p61"></section></td>
+<td><section onclick="tile62()" id="idF31" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p62"></section></td>
+<td><section onclick="tile63()" id="idH32" style="border: solid 4px; width: 30px; height: 30px; background: silver"><p style="text-align: center; font-size: 7px" id="p63"></section></td>
+<td><section onclick="tile64()" id="idF32" style="border: solid 4px; width: 30px; height: 30px; background: gold"><p style="text-align: center; font-size: 7px" id="p64"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+</tr>
+
+<tr>
+<td><section style="width: 30px; height: 30px; background: purple"></section></td>
+<td><section onclick="whiteRook()" id="whiteRook" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White Rook</h2></b></section></td>
+<td><section onclick="whiteKnight()" id="whiteKnight" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White Knight</h2></b></section></td>
+<td><section onclick="whiteBishop()" id="whiteBishop" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White Bishop</h2></b></section></td>
+<td><section onclick="whiteKing()" id="whiteKing" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White King</h2></b></section></td>
+<td><section onclick="whiteQueen()" id="whiteQueen" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White Queen</h2></b></section></td>
+<td><section onclick="whitePawn()" id="whitePawn" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">White Pawn</h2></b></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+<td><section style="width: 30px; height: 30px; background: purple"></section></td>
+</tr>
+<tr>
+<td><section onclick="boardSet()" style="width: 30px; height: 30px; background: red; border: solid 2px"><b><p style="text-align: center; font-size: 7px">Borad Set</p></b></section></td>
+<td><section onclick="blackRook()" id="blackRook" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black Rook</h2></b></section></td>
+<td><section onclick="blackKnight()" id="blackKnight" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black Knight</h2></b></section></td>
+<td><section onclick="blackBishop()" id="blackBishop" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black Bishop</h2></b></section></td>
+<td><section onclick="blackKing()" id="blackKing" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black King</h2></b></section></td>
+<td><section onclick="blackQueen()" id="blackQueen" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black Queen</h2></b></section></td>
+<td><section onclick="blackPawn()" id="blackPawn" style="width: 30px; height: 30px; background: grey; opacity: 60%"><b><h2 style="text-align: center; font-size: 7px">Black Pawn</h2></b></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+<td><section style="width: 30px; height: 30px; background: black; opacity: 60%"></section></td>
+<td><section id="trash" onclick="trash()" style="width: 30px; height: 30px; background: red; border: solid 2px"><b><p style="text-align: center; font-size: 7px" style="font-size: 7px">Trash</p></b></section></td>
+</tr>
+
+</table>
+
+<br>
+<u><h5>Crafted</u> <span style="color: red">By: </span><span style="font-family: cursive; color: gold">Dylan Smith</span></h5>
+
+<script src="/script/board/boardSet.js">
+</script>
+<script src="/script/board/notation.js">
+</script>
+<script src="/script/grid/tile1.js">
+</script>
+<script src="/script/grid/tile2.js">
+</script>
+<script src="/script/grid/tile3.js">
+</script>
+<script src="/script/grid/tile4.js">
+</script>
+<script src="/script/graveYard/rook.js">
+</script>
+<script src="/script/graveYard/knight.js">
+</script>
+<script src="/script/graveYard/bishop.js">
+</script>
+<script src="/script/graveYard/king.js">
+</script>
+<script src="/script/graveYard/queen.js">
+</script>
+<script src="/script/graveYard/pawn.js">
+</script>
+<script src="/script/trash.js">
+</script>
+
+</body>
+
+</html>
