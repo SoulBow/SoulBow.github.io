@@ -28,8 +28,6 @@ else if
 (document.getElementById("Notation1").style.background=="forestgreen") {
 document.getElementById("Notation1").style.opacity="60%";
 document.getElementById("Notation1").style.background="darkgreen";
-document.getElementById("Notation1").style.width="26px";
-document.getElementById("Notation1").style.height="26px";
 document.getElementById("Notation1").style.border="solid 0px";}}
 function Notation2 () {
 if (document.getElementById("Notation2").style.background=="darkgreen") {
