@@ -207,7 +207,7 @@ else {fifty.style.background="silver";}}
 function tile51 () {
 if (fiftyone.style.background=="gold" && document.getElementById("trash").style.background=="blue") {
   document.getElementById("p51").innerHTML="";}
-else if (three.style.background=="gold") {
+else if (fiftyone.style.background=="gold") {
 one.style.background="gold";
 two.style.background="silver";
 three.style.background="gold";
@@ -692,7 +692,7 @@ sixtyone.style.background="silver";
 sixtytwo.style.background="gold";
 sixtythree.style.background="silver";
 sixtyfour.style.background="gold";}
-else {nine.style.background="silver";}}
+else {fiftyseven.style.background="silver";}}
 
 function tile58 () {
 if (fiftyeight.style.background=="gold" && document.getElementById("trash").style.background=="blue") {
@@ -972,7 +972,7 @@ sixtyone.style.background="red";
 sixtytwo.style.background="gold";
 sixtythree.style.background="silver";
 sixtyfour.style.background="gold";}
-else {thirteen.style.background="silver";}}
+else {sixtyone.style.background="silver";}}
 
 function tile62 () {
 if (sixtytwo.style.background=="gold" && document.getElementById("trash").style.background=="blue") {
@@ -1042,7 +1042,7 @@ sixtyone.style.background="silver";
 sixtytwo.style.background="red";
 sixtythree.style.background="silver";
 sixtyfour.style.background="gold";}
-else {fourteen.style.background="gold";}}
+else {sixtytwo.style.background="gold";}}
 
 function tile63 () {
 if (sixtythree.style.background=="silver" && document.getElementById("trash").style.background=="blue") {
@@ -1112,7 +1112,7 @@ sixtyone.style.background="silver";
 sixtytwo.style.background="gold";
 sixtythree.style.background="red";
 sixtyfour.style.background="gold";}
-else {fifteen.style.background="silver";}}
+else {sixtythree.style.background="silver";}}
 
 function tile64 () {
 if (sixtyfour.style.background=="gold" && document.getElementById("trash").style.background=="blue") {
@@ -1182,4 +1182,4 @@ sixtyone.style.background="silver";
 sixtytwo.style.background="gold";
 sixtythree.style.background="silver";
 sixtyfour.style.background="red";}
-else {sixteen.style.background="gold";}}
+else {sixtyfour.style.background="gold";}}
