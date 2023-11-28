@@ -31,28 +31,28 @@ else if (element.style.background=="deeppink" && document.getElementById("button
 element.style.background="black";
 element.style.border="solid black";}}
 
-function color(element) {
+function color() {
 if (document.getElementById("kingButtonPurple").style.background=="purple" || document.getElementById("kingButtonOrange").style.background=="orange") {
 document.getElementById("kingButtonPurple").style.background="grey";
 document.getElementById("kingButtonOrange").style.background="grey";}
-else if (element.style.background=="red") {element.style.background="black";
-  element.style.color="red";
-  element.innerHTML="Moving Black";}
-else {element.style.background="red";
-element.style.color="black";
-element.innerHTML="Moving Red";}}
+else if (document.getElementById("button").style.background=="red") {document.getElementById("button").style.background="black";
+  document.getElementById("button").style.color="red";
+  document.getElementById("button").innerHTML="Moving Black";}
+else {document.getElementById("button").style.background="red";
+document.getElementById("button").style.color="black";
+document.getElementById("button").innerHTML="Moving Red";}}
 
-function kingPurple(element) {
-if (element.style.background=="grey") {
-element.style.background="purple";
-document.getElementById("kingButtonOrange").style.background="grey";}
-else {element.style.background="grey";}}
+function kingOrange() {
+if (document.getElementById("kingButtonOrange").style.background=="grey") {
+document.getElementById("kingButtonPurple").style.background="grey";
+document.getElementById("kingButtonOrange").style.background="orange";}
+else {document.getElementById("kingButtonOrange").style.background="grey";}}
 
-function kingOrange(element) {
-if (element.style.background=="grey") {
-element.style.background="orange";
-document.getElementById("kingButtonPurple").style.background="grey";}
-else {element.style.background="grey";}}
+function kingPurple() {
+if (document.getElementById("kingButtonPurple").style.background=="grey") {
+document.getElementById("kingButtonOrange").style.background="grey";
+document.getElementById("kingButtonPurple").style.background="purple";}
+else {document.getElementById("kingButtonPurple").style.background="grey";}}
 
 function reset() {
 document.getElementById("id1").style.background="red";
