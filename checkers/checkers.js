@@ -1,5 +1,25 @@
-function tile (element) {
-if (element.style.background=="red" || element.style.background=="black") {
+function tile (element) {  
+if (element.style.background=="deeppink" && document.getElementById("kingButtonOrange").style.background=="orange") {
+element.style.background="orange";
+element.style.border="solid black"}
+
+else if (element.style.background=="deeppink" && document.getElementById("kingButtonPurple").style.background=="purple"){
+element.style.background="purple";
+element.style.border="solid black";}
+
+else if (element.style.background=="black" && document.getElementById("kingButtonOrange").style.background=="orange") {
+element.style.background="orange";
+element.style.border="solid black"}
+
+else if (element.style.background=="red" && document.getElementById("kingButtonPurple").style.background=="purple"){
+element.style.background="purple";
+element.style.border="solid black";}
+
+else if (element.style.background=="red" || element.style.background=="black") {
+element.style.background="deeppink";
+element.style.border="deeppink";}
+
+else if (element.style.background=="orange" || element.style.background=="purple") {
 element.style.background="deeppink";
 element.style.border="deeppink";}
 
@@ -12,10 +32,27 @@ element.style.background="black";
 element.style.border="solid black";}}
 
 function color(element) {
-if (element.style.background=="red") {element.style.background="black";
-  element.style.color="red";}
+if (document.getElementById("kingButtonPurple").style.background=="purple" || document.getElementById("kingButtonOrange").style.background=="orange") {
+document.getElementById("kingButtonPurple").style.background="grey";
+document.getElementById("kingButtonOrange").style.background="grey";}
+else if (element.style.background=="red") {element.style.background="black";
+  element.style.color="red";
+  element.innerHTML="Moving Black";}
 else {element.style.background="red";
-element.style.color="black";}}
+element.style.color="black";
+element.innerHTML="Moving Red";}}
+
+function kingPurple(element) {
+if (element.style.background=="grey") {
+element.style.background="purple";
+document.getElementById("kingButtonOrange").style.background="grey";}
+else {element.style.background="grey";}}
+
+function kingOrange(element) {
+if (element.style.background=="grey") {
+element.style.background="orange";
+document.getElementById("kingButtonPurple").style.background="grey";}
+else {element.style.background="grey";}}
 
 function reset() {
 document.getElementById("id1").style.background="red";
